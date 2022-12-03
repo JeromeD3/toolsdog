@@ -1,3 +1,10 @@
+/*
+ * @LastEditors: isboyjc
+ * @Description: Vite 项目配置
+ * @Date: 2022-09-17 14:35:02
+ * @LastEditTime: 2022-11-24 01:20:18
+ * @Author: isboyjc
+ */
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig, loadEnv } from 'vite'
@@ -101,7 +108,7 @@ export default defineConfig(({ mode }) => {
       }),
       Components({
         // imports 指定组件所在位置，默认为 src/components
-        dirs: ['src/components/', 'src/view/'],
+        dirs: ['src/components/', 'src/views/', 'src/layout'],
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         resolvers: [
           ArcoResolver({
